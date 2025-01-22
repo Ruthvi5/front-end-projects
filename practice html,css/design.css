@@ -1,0 +1,1179 @@
+/* p {
+    margin: 0;
+    padding: 0;
+    color:rgb(0, 255, 255);
+    border: 1px solid blue;
+    /*border:inherit;*/
+    /* width: 75%; */
+    /* margin-left:100px;
+    font-family:segoe ui,futura;
+    font-size: 20px;
+    font-weight: 500;
+    font-style:oblique;
+    direction:rtl ; */
+    /* letter-spacing: 0px;
+    word-spacing: 0.01cm;
+    line-height:3ch;
+    text-shadow: red 2px 2px 2px;/* color offset-x offset-y blur-radius*/
+    /* text-transform:capitalize;
+}  */
+h1,h2 {
+    text-align: center;
+    text-transform:uppercase;
+    text-decoration: line-through;
+    text-decoration-color: chocolate;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+    /*text-decoration:line-through wavy blue 10px;*/
+
+}
+/*  body {
+    /*imported from google font*/
+    /* font-family:Ga Maamli;
+    text-shadow: red 2px 2px 2px, -3px 3px 2px rgb(28, 209, 59);/*multi shadow*/
+    /* margin-top:100px;
+} */ 
+/*body{
+    background-color:red;
+    comments in css
+}*/
+
+#featured { /*id should start with #   used only once*/
+    background-color: black;
+    font-style: normal;
+    text-shadow: none;
+    color: blue;
+
+}
+
+.tag{  /*class should start with .  can be used again and again */
+    background-color: yellow;
+    overflow-y: scroll;
+    overflow-x:scroll;
+    width: 600px;
+    height: 400px;
+    font-size: 40px;
+    direction:ltr;
+    font-style: none;
+    font-family: fantacy;
+
+}
+
+#cast {
+    list-style-type: square;
+    list-style-position:unset;
+}
+
+a {
+    color:blueviolet;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+a:visited {
+    color: magenta;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: wait;
+}
+h1:hover {
+    color: rgb(156, 202, 28);
+    font-size: 50px;
+}
+/*
+* { all elements are selected}  */
+
+input {
+    background-color: gold;
+}
+
+input [type="number"] {
+    color: blanchedalmond;
+}
+
+a[href*="wiki"] {
+    color: rgb(26, 36, 182);
+}
+/* a[href$=".org"] */
+a[href^="#"] {
+    color: darkmagenta;
+}
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px green ;
+}
+
+li span {
+    /* selects only the span inside li */
+    color: grey;
+    text-shadow: none;
+}
+
+ol>li {
+    /*cild combintion direct conection*/
+    border: 1px solid black;
+}
+
+h2.score {
+    color: purple;
+}
+
+h1 {
+    /* border-width: 2px;
+    border-color: gold;
+    border-top-color: red;
+    border-right-color: orange;
+    border-bottom-color: yellow;
+    border-left-color: green;
+    border-style: solid;
+    border-bottom-style: dotted; */
+    border: 2px solid green;
+    padding: 20px;
+    margin: 20px 30px 50px 90px;
+    /* border-top-color: purple; */
+    /* border-bottom: 3px dashed magenta; */
+}
+
+/* h1 {
+    border: 2px solid olivedrab;
+    width: 500px;
+    height: 60px;
+} */
+
+#container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgb(230, 19, 19);
+    margin: 20px;
+}
+/* .box {
+    box-sizing: border-box;
+} */
+.box {
+    border: 1px solid orange;
+    height: 50%;
+    width: 50%;
+}
+
+/* span only can move margin left and right it will not push the border up and down */ 
+/* display: block; */
+
+#ruthu {
+    border: 10px solid red;
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+.rectangle {
+    border: 10px solid black;
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+}
+/*display:none;
+opacity:0.5  */
+
+#contain {
+    border: 1px solid purple;
+    background-color: lavenderblush;
+    width: 400px;
+    height: 400px;
+}
+#contain h3 {
+    text-align: center;
+    border: 1px solid black;
+    width: 150px;
+    margin: 100px auto;
+}
+
+.ruthvi {
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 500px;
+    background-color: mediumvioletred;
+    margin: 100px auto;
+    /* border-radius:50% / 10px 20px 30px 40px; circle */
+    border-radius: 40px;
+    box-shadow: 20px 20px 20px/*x y blur*/ rgba(0,0,0,0.4),-2px -2px 2px blue;
+    object-fit: cover;
+}
+h2 + p {
+    color: black;  /*adjacent combinator*/
+}
+h2 ~ p {
+    color: deeppink;  /*sibling combinator*/
+}
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+check in css   */
+/* li:nth-of-type(2n) {
+    border: 1px solid magenta;
+} */
+
+button:active {
+    background-color: pink;
+}
+input:focus {
+    border: 5px solid rgb(16, 216, 16);
+}
+
+/* body:not(p,h1,h2) {} */
+
+/* p::first-line {
+    color: blue;
+    text-transform: uppercase;
+} */
+/* p:first-of-type::first-letter {
+    color: magenta;
+    text-transform: uppercase;
+    font-size: 200%;
+} */
+/* background-repeat: repeat; */
+/* selector order
+style !important; --- this always winss 
+inline style
+ID selectors
+CLass attribute pseudo class
+type | pseudo elements
+
+*/
+
+.quote {
+    font-style: italic;
+    font: 14px;
+    border-left: 2px solid red;
+    padding-left: 16px;
+    color: black;
+    text-shadow: none;
+}
+.quote cite {
+    display: block;
+    font-weight: bold;
+    margin-left: 20px;
+}
+code {
+    color: bisque;
+}
+
+/* 0.7em means 0.7 times the above one it is a relative unit
+    rem means the same font size repeats */
+
+/* * {
+    background-color: magenta;
+    width: 50vw;
+    height: 100vh;---viewport height
+} */
+
+.flowww p {
+    font-size: 30px;
+}
+
+.flowww img {
+    width: 300px;
+    float: right;
+}
+.bgimg {
+    border: 5px solid red;
+    height:1000px ;
+    width: 700px;
+    background-image:url("https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg");
+    /* background-repeat: repeat-y;
+    background-size: cover; */
+    /* contain cover */
+    /* background-size: 50% 50%; */
+    /* background-position: bottom; starts from there*/
+    background-clip: content-box;
+    padding: 20px;
+}
+
+.gradiant {
+    border: 3px solid black;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: linear-gradient(45deg, cyan 50%,magenta);
+}
+.gradiant2 {
+    border: 3px solid black;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: radial-gradient(circle at bottom, cyan ,magenta);
+    filter: brightness(2);
+    /* 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/background
+    conic-gradient
+    repeating-linear-gradient(45deg,blue,red10%)
+    background: center / contain no-repeat url("../../media/examples/firefox-logo.svg"),
+            #eee 35% url("../../media/examples/lizard.png"); */
+
+    /*  https://developer.mozilla.org/en-US/docs/Web/CSS/filter
+    <filter-function> = 
+  <blur()>         |
+  <brightness()>   |
+  <contrast()>     |
+  <drop-shadow()>  |
+  <grayscale()>    |
+  <hue-rotate()>   |
+  <invert()>       |
+  <opacity()>      |
+  <sepia()>        |
+  <saturate()>  */
+}
+.position p {
+    border: 1px solid black;
+    background-color: magenta;
+    margin: 30px;
+    font-size: 2rem;
+    z-index: 1;
+    position: relative;
+    /* position: static; */
+    /* position: relative;
+    left: 23px;
+    if you use z-index if both have relative then which num is high will be on the top will be visible  */
+
+}
+#relative {
+    background-color: yellow;
+    /* position: absolute; */
+    top: 0px;
+    left: 0;
+    /* position: relative;
+    left: 43px; 
+    bottom: 50px;
+    top: calc(50% -50px);
+    z-index:2; */
+}
+.poo {
+    background-color: olive;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+}
+.poo span {
+    color: white;
+    background-color: orangered;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+.msg3 {
+    background: radial-gradient(#0288d1, #01579b);
+    height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.badge {
+    background-color: #4caf50;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.fixed p {
+    font-size: 2rem;
+    background-color: orchid;
+    color: white;
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+/* tranisionss */
+.hoverme {
+    border: 2px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    /* transition: background-color 5s; it totally changes color even if you remove the cursor from 
+    that      ---- if we place this in hover then if we remove cursor then it will return to origin directly  */
+    /* transition: transform 3s linear;
+     transtition : property duration timing-function delay */
+    /* transition: transform 3s cubic-bezier(0.2,-2,0.8,2); */
+    transition: background-color 2s ease-in 1s,color 1s ease-out 3s;
+}
+
+.hoverme:hover {
+    background-color: #01579b;
+    /* transition: background-color 5s; */
+    /* transform-origin:bottom-left;
+    transform: translateX(100px); rotate(90deg) scale(0.7) scaleX(4) skewed(5)*/
+    color: antiquewhite;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties  */
+.butt {
+    background: linear-gradient(to bottom right, #3899ee, #38e2ee);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.but {
+    background-color: white;
+    color: #401aff;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border-radius: 0.3rem;
+    padding: 2rem 7rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn1 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.btn1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 13px rgba(0, 0, 0, 0.22);
+}
+.btn2 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 13px rgba(0, 0, 0, 0.22);
+}
+.btn2:hover {
+    transform: scale(0.95);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18), 0 6px 6px rgba(0, 0, 0, 0.22);
+}
+
+.flex {
+    border: 4px solid black;
+    width: 1200px;
+    height: 1000px;
+    margin: 40px auto;
+    display: flex;
+    /* flex-direction: column;row row-reverse; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: flex-end; space-around it is for | straight vertical */
+    /* justify-content: space-between; */
+    /* align-items: center; it is for--- horizontal changes*/
+    align-items: flex-end;
+    align-content: space-between;
+}
+.boww {
+    width: 250px;
+    height: 240px;
+    font-size: 4rem;
+    text-align: center;
+}
+/* .thu {
+    align-self: center ;
+} */
+
+.slidebar1 {
+    border: 4px solid black;
+    width: 70%;
+    height: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.sidebar1 {
+    background-color: palevioletred;
+    flex-grow: 1;
+    /* max-width: 200px; */
+}
+.slidebar1 p {
+    background-color: darkseagreen;
+    margin: 0;
+    width: 600px;
+    flex-grow: 2;
+}
+
+.slidebar2 {
+    border: 4px solid black;
+    width: 70%;
+    height: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.sidebar2 {
+    background-color: palevioletred;
+    width: 300px;
+    flex-shrink: 10;  
+    /* shrink 10times faster than that of p when we resize ur window*/
+    /* max-width: 200px; */
+}
+.slidebar2 p {
+    background-color: darkseagreen;
+    margin: 0;
+    width: 1000px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.slidebar3 {
+    border: 4px solid black;
+    width: 70%;
+    height: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.slidebar3 p {
+    background-color: darkseagreen;
+    margin: 0;
+    width: 1000px;
+    flex-basis: 200px;
+}
+/* it adjusts the width or height according to column/row flex-direction
+we can also use flex:2 2 500px (all 3 properties togeather)
+ https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+
+.order {
+    border: 4px solid black;
+    width: 70%;
+    height: 1500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dibba {
+    background-color: purple;
+    flex: 1;
+    height: 200px;
+    margin: 30px;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    order: 1;
+}
+.star {
+    order: 2;
+    /* order: -1; */
+    background-color: orangered;
+}
+
+
+.navv {
+        background-color: #37474f;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.left {
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+}
+.right {
+        background-color: blue;
+        display: flex;
+        justify-content: flex-end;
+        width: 300px;
+}
+.navlink {
+        color: white;
+        font-size: 2rem;
+        /* margin: 0 30px; */
+}
+.beauty {
+    height: 100vh;
+    background: linear-gradient(cyan,purple);
+    display: flex;
+    justify-content: center;
+
+}
+.cards {
+    background-color: white;
+    border-radius: 5px;
+    width: 400px;
+    margin: 0 30px;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+.cards footer {
+    background-color: slateblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+/* 
+responsive
+body {
+    background-color: red;
+}
+
+@media only screen and (min-width:800px){
+    body {
+        background-color: pink;
+    }
+}
+@media only screen and (min-width:1200px){
+    body {
+        background-color: yellow;
+    }
+} */
+/* 
+can also use
+@media (width < 800) {}
+https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features
+order matters in media small should be first (800 then 1200)
+@media only print {
+
+}
+major break points width
+mobile--480
+tablet--768
+desktop-1024
+ */
+
+/* 
+    body {
+        background-color: red;
+    }
+    
+    @media only screen and (orientation: portrait) {
+        body {
+        background-color: yellow;
+        }
+        h1::before {
+        content: "portrait";
+        }
+    }
+    @media only screen and (orientation: landscape) {
+        body {
+        background-color: blue;
+        }
+        h1::before {
+        content: "landscape";
+        }
+    } */
+
+
+
+        .navy {
+            margin: 40px;
+            display: flex;
+            background-color: green;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+        .navy a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 20px;
+        }
+        
+        .navy .links {
+            display: flex;
+        }
+        
+        @media only screen and (max-width: 769px) {
+            .navy a {
+            margin: 0 5px;
+            }
+        }
+        
+        @media only screen and (max-width: 650px) {
+            .navy {
+            color: #37474f;
+            flex-direction: column;
+            padding: 40px;
+            }
+            .navy.links {
+            flex-direction: column;
+            align-items: center;
+            }
+        }
+        /* .navbar h1 {
+            margin-left: 40px;
+        }
+        
+        .navbar .links {
+            margin-right: 40px;
+        } */
+
+            .boo {
+                /* margin: 40px; */
+                flex: 1 1 20%;
+                border: 4px solid white;
+                box-sizing: border-box;
+                height: 300px;
+                background-color: steelblue;
+            }
+            .boo:nth-of-type(2n) {
+                background-color: lightseagreen;
+            }
+            .response {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            @media only screen and (max-width: 1400px) {
+                .boo {
+                flex: 1 1 25%;
+                }
+            }
+            
+            @media only screen and (max-width: 1000px) {
+                .boo {
+                flex: 1 1 33.3333%;
+                }
+            }
+            
+            @media only screen and (max-width: 800px) {
+                .boo {
+                flex: 1 1 50%;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                .boo {
+                flex: 1 1 100%;
+                }
+            }
+
+/* flex is row or column
+grid is row and column */
+.grid {
+    height: 700px;
+    width: 900px;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+    display: grid;
+    /* grid-template-columns: 100px 1fr 2fr 100px; */
+    /* grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr; 
+    grid-template-columns:minmax(200px,1fr) minmax(400px,1fr)--fraction
+    grid-template-columns:minmax(200px,auto)
+    grid-template-columns:repeat(4,minmax(200px,1fr))---repeats 4 times
+    grid-template-columns:fit-content(300px) fit-content(200px) fit-content(400px)
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-column-end:span 3;
+    or we can use
+    grid-column:1/3;
+    grid-area:1/3/5/5 column start,row start,column end,row end*/
+    grid-template: 1fr 1fr 1fr / 1fr 2fr;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    /* grid-gap: 10px; */
+    gap: 10px 20px;
+    grid-auto-flow: column;
+    /* first it will fill the column now  there will be column dense also to fill the upper empty boxes also*/
+    grid-auto-rows: 200px;/* extra boxes will br displayed in this px*/
+}
+.gridbox {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+these names can be used next in first
+.first {
+grid-column-start: col2-start;
+grid-column-end: col3-end;
+grid-row-start: row2-start;
+
+grid-template-areas:
+"a a c"
+"a a c"
+"b b c";  giving names to lines
+first{ 
+grid-area:a;
+}
+} */
+.grid2 {
+    height: 700px;
+    width: 80%;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    /*we can also use auto-fit mostly both are same but this fits without empty space */
+}
+.grid2box {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.animation {
+    width: 300px;
+    height: 300px;
+    background-color: orangered;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;/*reverse*/
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+    animation-timing-function: ease-in-out; /*linear
+    https://developer.mozilla.org/en-US/docs/Web/CSS/animation*/
+    animation-play-state: running; /*paused
+    or
+    animation: spin 1s infinite reverse linear;*/
+    animation-fill-mode: forwards;/*after animation at what state it should be forwards,backwards,both,none*/
+}
+
+@keyframes spin {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+    0% {
+    transform: translateX(0);
+    background-color: purple;
+    }
+    25% {
+    transform: translateX(500px);
+    }
+    75% {
+    transform: translateX(800px);
+    }
+    100% {
+    transform: translateX(200px);
+    background-color: magenta;
+    }
+}
+
+@keyframes bounce {
+    0% {
+    }
+    6% {
+    transform: translateY(0px);
+    }
+    7% {
+    transform: translateY(-6px);
+    }
+    9% {
+    transform: translateY(0px);
+    }
+    10% {
+    transform: translateY(-1px);
+    }
+    11% {
+    transform: translateY(0px);
+    }
+    100% {
+    }
+}
+  /* @keyframes colorchange {
+    from {
+      background-color: pink;
+    }
+    to {
+      background-color: cyan;
+    }
+  } */
+  
+  /* @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+  
+  /* @keyframes rainbow {
+    0% {
+      background-color: red;
+    }
+    20% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: green;
+    }
+    100% {
+      background-color: violet;
+    }
+  } */
+
+
+
+.spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+.spinner {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 12px solid #cfd8dc;
+    border-top-color: #3f51b5;
+    animation: 1s spin infinite ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+
+.ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loader span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #03a9f4;
+    margin: 0 10px;
+}
+
+.loader span:nth-child(1) {
+    animation: 1s jump infinite ease-in-out;
+}
+
+.loader span:nth-child(2) {
+    animation: 1s 0.333s jump infinite ease-in-out;
+}
+.loader span:nth-child(3) {
+    animation: 1s 0.666s jump infinite ease-in-out;
+}
+@keyframes jump {
+    0% {
+    transform: translateY(0) scale(1);
+    }
+    30% {
+    transform: translateY(-20px) scale(1.2);
+    }
+    75% {
+    transform: translateY(0) scale(1);
+    }
+}
+
+
+
+
+.// {
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.before {
+    background: black;
+    color: white;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.before::before {
+    content: "";
+    height: 306px;
+    width: 306px;
+    background: linear-gradient(cyan, magenta);
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    z-index: -1;
+}
+
+
+.trilu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .b {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    border: 2px solid #e91e63;
+    color: #e91e63;
+    text-decoration: none;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease;
+  }
+  
+  .b::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #e91e63;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: -1;
+  }
+  
+  .b:hover {
+    color: white;
+  }
+  .b:hover::before {
+    transform: translateX(0);
+  }
+
+
+  .rainbow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .rainbow {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(cyan, yellow, magenta, cyan);
+    border: 4px solid white;
+    box-shadow: inset 0px 0px 110px -70px black;
+    position: relative;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  .rainbow::after {
+    content: "";
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0px 0px 110px -70px black;
+    border: 4px solid white;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .toggle {
+    opacity: 0;
+  }
+  
+  .toggle + label {
+    position: relative;
+    padding-left: 5rem;
+  }
+  .toggle + label::before {
+    content: "";
+    background-color: #c6d0cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    transition: background-color 0.2s;
+  }
+  
+  .toggle + label::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    transition: transform 0.2s;
+  }
+  
+  .toggle:checked + label::before {
+    background-color: #20b776;
+  }
+  
+  .toggle:checked + label::after {
+    transform: translateX(2rem);
+  }
+  

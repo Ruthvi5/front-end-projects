@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="design.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+
+  <title>CSS Basics</title>
+
+</head>
+
+<body>
+  <h1>Amadeus</h1>
+  <div>
+    <a href="/drama">Drama</a>, <a href="/music">Music</a>,
+    <a href="/history">History</a>
+  </div>
+  <!-- 2 different classes 1. score  2.big -->
+  <h2 class="score big ">Average Rating: 9.1/10</h2>
+
+    <ul id="toc">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#cast">Cast</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+    </ul>
+  <hr/>
+  <h2>Summary</h2>
+  <p class="tag">
+    <a href="https://en.wikipedia.org/wiki/Antonio_Salieri">Antonio Salieri</a>
+    believes that
+    <a href="https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart">Wolfgang Amadeus Mozart</a>'s music is divine and
+    miraculous. He wishes he was himself as good a
+    musician as Mozart so that he can praise the Lord through composing. He
+    began his career as a devout man who believes his success and talent as a
+    composer are God's rewards for his piety. He's also content as the
+    respected, financially well-off, court composer of
+    <a href="https://en.wikipedia.org/wiki/Joseph_II,_Holy_Roman_Emperor">Austrian Emperor Joseph II</a>. But he's
+    shocked to learn that Mozart is such a vulgar creature, and
+    can't understand why God favored Mozart to be his instrument. Salieri's
+    envy has made him an enemy of God whose greatness was evident in Mozart.
+    He is ready to take revenge against God and Mozart for his own musical
+    mediocrity
+  </p>
+
+  <h2>Cast</h2>
+  <ul id="cast">
+    <li>F. Murray Abraham <span>Antonio Salieri</span></li>
+    <li>Tom Hulce <span>Wolfgang Amadeus Mozart</span></li>
+    <li>Elizabeth Berridge <span>Constanze Mozart</span></li>
+    <li>Roy Dotrice <span>Leopold Mozart</span></li>
+    <li>Simon Callow <span>Emanuel Schikaneder</span></li>
+    <li>Christine Ebersole <span>Katerina Cavalieri</span></li>
+    <li>Jeffrey Jones <span>Emperor Joseph II</span></li>
+  </ul>
+  <hr />
+  <!-- The Thematic Break (Horizontal Rule) element  -->
+  <h2>User Reviews</h2>
+  <div>
+    <span id="featured">Featured Review</span>
+    <h3>A Genius Movie About A Genius</h3>
+    <h4>10/10</h4>
+    <p>
+      I thought that it would be impossible to make a movie like this one!
+      Peter Schaffer's original play inspired Milos Forman, the great czech
+      film maker, that surprised the world with "One flew over the cuckoo's
+      nest" (1975). The sublime, almost over-human performance by Frank Murray
+      Abraham (the Mozart enemy and secret admirer, Salieri) is one of the
+      keys for the movie success, mostly to it's depth. The perfect sense of
+      timing by Milos Forman is admirable, he knows when to play wich music.
+      All the scenarios: opera houses, palaces, streets, etc., are details
+      absolutely harmonious! One of this classic secret was that Forman
+      gathered "the" team, perfect team work.
+    </p>
+  </div>
+  <div>
+    <h3>True Gem For Music Fans</h3>
+    <h4>9.5/10</h4>
+    <p>
+      I'd like to point out a few facts before I review the movie. First of
+      all, Mozart died at home surrounded by his family, pupil and a priest.
+      Secondly, the plot of  <code>background-color </code>Amadeus is not exactly original. Rimsky-Korsakov
+      wrote a short opera called "Mozart and Salieri" with the bare bones of
+      the story and the identical characterization of the two composers, and
+      he used Pushkin's drama for the libretto. So, the rumor that Salieri
+      killed Mozart has been around for almost a couple of centuries though we
+      all know there isn't an iota of veracity in it.
+    </p>
+  </div>
+  <div>
+      <h3>A Genius Movie About A Genius</h3>
+      <h4 class="score">10/10</h4>
+      <blockquote class="quote">
+          I thought that it would be impossible to make a movie like this one!
+          Peter Schaffer's original play inspired Milos Forman, the great czech
+          film maker, that surprised the world with "One flew over the cuckoo's
+          nest" (1975). The sublime, almost over-human performance by Frank Murray
+          Abraham (the Mozart enemy and secret admirer, Salieri) is one of the
+          keys for the movie success, mostly to it's depth. The perfect sense of
+          timing by Milos Forman is admirable, he knows when to play wich music.
+          All the scenarios: opera houses, palaces, streets, etc., are details
+          absolutely harmonious! One of this classic secret was that Forman
+          gathered "the" team,<cite> perfect team work.</cite>
+      </blockquote>
+  </div>
+  <div>
+      <h2>FAQs</h2>
+      <ol>
+          <li>Was Salieri a real person or just made up for the movie?
+              <ul>
+                  <li>Saliera was a real person!</li>
+                  <li>Yes, Antonio Salieri [1750-1825] was a real person, an Italian composer and conductor. As the
+                      Austrian imperial Kapellmeister from 1788 to 1824, he was one of the most important and famous
+                      musicians of his time.</li>
+              </ul>
+          </li>
+          <li>What is the music in the movie?
+              <ul>
+                  <li>First cut, Leopold's theme (recurring)</li>
+                  <li>Opening credits: Symphony No. 25 In G Minor </li>
+              </ul>
+          </li>
+      </ol>
+  </div>
+
+
+  <div>
+      <h2>Leave Your Own Review</h2>
+      <input type="text" placeholder="username">
+      <input type="number" placeholder="rating">
+      <label for="permission">I give you permission to use my rating: </label>
+      <input type="checkbox" id="permission" checked>
+      <button>Submit</button>
+  </div>
+
+  <h1>I am a <span id="ruthu">ruthvi</span>heading</h1>
+  <div id="container">
+      <div class="box"></div>
+  </div>
+  <div class="rectangle"></div>
+  <div class="rectangle"></div>
+
+  <div id="contain">
+      <h3>center me</h3>
+  </div>
+  <div class="ruthvi"></div>
+  <div class="flowww">
+    <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="">
+    <p> I thought that it would be impossible to make a movie like this one!
+      Peter Schaffer's original play inspired Milos Forman, the great czech
+      film maker, that surprised the world with "One flew over the cuckoo's
+      nest" (1975). The sublime, almost over-human performance by Frank Murray
+      Abraham (the Mozart enemy and secret admirer, Salieri) is one of the
+      keys for the movie success, mostly to it's depth. The perfect sense of
+      timing by Milos Forman is admirable, he knows when to play wich music.
+      All the scenarios: opera houses, palaces, streets, etc., are details
+      absolutely harmonious! One of this classic secret was that Forman
+      gathered "the" team,
+    </p>
+  </div>    
+  <div class="bgimg">
+    <p>Qoutes- Less words, but affects us to the core. Following are a few of them i want to mention here:- "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less."</p>
+  </div>
+  <div class="gradiant"></div>
+  <div class="gradiant2"></div>
+  <div class="position">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, qui ducimus? Ipsa, aliquam! At quos nam
+      recusandae molestiae consequuntur laudantium sunt! Numquam aliquam vel facere, deleniti adipisci magnam odio
+      repellendus.</p>
+    <p id="relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, qui ducimus? Ipsa, aliquam! At quos nam
+      recusandae molestiae consequuntur laudantium sunt! Numquam aliquam vel facere, deleniti adipisci magnam odio
+      repellendus.</p>
+
+  </div>
+  <h1>Positioning</h1>
+  <div class="poo">
+      <span>Hi!</span>
+  </div>
+  <div class="msg3">
+    <a href="#messages" class="btn">
+      Messages
+      <span class="badge">3</span>
+  </a>
+
+  </div>
+  <div class="fixed">
+    <p> hello ruthuuu!!!</p>
+  </div>
+  <div class="hoverme">
+    <p>hover mee!!!</p>
+  </div>
+  <div class="butt">
+    <button class="but btn1">click me</button>
+    <button class="but btn2">click me</button>
+  </div>
+  <div class="flex">
+    <div class="boww" style="background-color: #FF5722">1</div>
+    <div class="boww" style="background-color: #FF9800">2</div>
+    <div class="boww thu" style="background-color: #FFC107">3</div>
+    <div class="boww" style="background-color: #FFEB3B">4</div>
+    <div class="boww" style="background-color: #CDDC39">5</div>
+    <div class="boww" style="background-color: #8BC34A">6</div>
+</div>
+<div class="slidebar1">
+  <div class="sidebar1">
+      I AM SIDEBAR
+  </div>
+  <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sit et suscipit harum hic asperiores
+      tempore eius a cumque, quo amet cupiditate doloribus dolorem nam. Quis mollitia sequi qui perspiciatis!
+      Aliquam consequatur qui eos quisquam doloremque tenetur facere. Quidem voluptatum, veritatis molestias
+      exercitationem quod non eveniet blanditiis veniam porro saepe architecto iure eius nostrum dolore incidunt eum
+      labore, ea perspiciatis?
+      Adipisci consequatur libero aliquid atque delectus? Unde atque, quae blanditiis voluptatibus, odio dolorem amet
+      assumenda rerum id reiciendis quidem aspernatur exercitationem voluptates omnis? Odit accusantium exercitationem
+      beatae a sit hic!
+      Architecto eius, fugiat animi repellendus sit ducimus dignissimos debitis in deserunt nihil odit reprehenderit,
+      facere harum laborum incidunt omnis quod eveniet sint dolores dolorem error? Facilis neque ab rerum voluptates?
+      Qui inventore animi ducimus sapiente, impedit expedita, molestiae consectetur ipsa laudantium dolore nemo, porro
+      tenetur! Voluptatum deleniti corrupti nobis nesciunt animi quo porro rerum laboriosam suscipit sapiente, commodi
+      minima doloribus!
+      Temporibus officiis quos ut, rerum quae, deleniti sint molestias ratione ab ad beatae vel, maxime dolorem
+      repudiandae sapiente quibusdam! Doloremque quo magnam architecto exercitationem, nesciunt deserunt natus non
+      recusandae ipsa?
+      At doloremque soluta aliquid laboriosam quia iusto dicta, totam perferendis voluptatibus eum velit corporis
+      cupiditate blanditiis nulla, expedita, nihil eos est explicabo nesciunt maxime nemo reiciendis officia harum
+      magnam! Ut.
+      Tenetur, placeat officia commodi autem, nostrum aliquid illo cupiditate fuga consectetur a consequuntur cumque
+      ullam quia architecto, obcaecati aliquam? Fugit porro illo maiores explicabo iure nobis possimus aliquid
+      temporibus error.
+      Nemo saepe explicabo incidunt voluptatem eius debitis dolorem adipisci non placeat, quas hic numquam repellendus
+      odio voluptates aliquid voluptate similique quisquam iusto doloremque inventore. Odio nulla asperiores
+      dignissimos deleniti atque!
+      Beatae maxime magni aspernatur eligendi consequatur aliquid quidem, laudantium architecto necessitatibus ipsa
+      itaque molestiae, veniam officia obcaecati doloremque cum fugiat porro nemo. Atque dignissimos voluptas
+      consectetur quidem voluptatem aliquid beatae?
+  </p>
+  <div class="sidebar1">
+      I AM SIDEBAR
+  </div>
+
+</div>
+<div class="slidebar2">
+  <div class="sidebar2">
+      I AM SIDEBAR
+  </div>
+  <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sit et suscipit harum hic asperiores
+      tempore eius a cumque, quo amet cupiditate doloribus dolorem nam. Quis mollitia sequi qui perspiciatis!
+      Aliquam consequatur qui eos quisquam doloremque tenetur facere. Quidem voluptatum, veritatis molestias
+      exercitationem quod non eveniet blanditiis veniam porro saepe architecto iure eius nostrum dolore incidunt eum
+      labore, ea perspiciatis?
+      Adipisci consequatur libero aliquid atque delectus? Unde atque, quae blanditiis voluptatibus, odio dolorem amet
+      assumenda rerum id reiciendis quidem aspernatur exercitationem voluptates omnis? Odit accusantium exercitationem
+      beatae a sit hic!
+      Architecto eius, fugiat animi repellendus sit ducimus dignissimos debitis in deserunt nihil odit reprehenderit,
+      facere harum laborum incidunt omnis quod eveniet sint dolores dolorem error? Facilis neque ab rerum voluptates?
+      Qui inventore animi ducimus sapiente, impedit expedita, molestiae consectetur ipsa laudantium dolore nemo, porro
+      tenetur! Voluptatum deleniti corrupti nobis nesciunt animi quo porro rerum laboriosam suscipit sapiente, commodi
+      minima doloribus!
+      Temporibus officiis quos ut, rerum quae, deleniti sint molestias ratione ab ad beatae vel, maxime dolorem
+      repudiandae sapiente quibusdam! Doloremque quo magnam architecto exercitationem, nesciunt deserunt natus non
+      recusandae ipsa?
+      At doloremque soluta aliquid laboriosam quia iusto dicta, totam perferendis voluptatibus eum velit corporis
+      cupiditate blanditiis nulla, expedita, nihil eos est explicabo nesciunt maxime nemo reiciendis officia harum
+      magnam! Ut.
+      Tenetur, placeat officia commodi autem, nostrum aliquid illo cupiditate fuga consectetur a consequuntur cumque
+      ullam quia architecto, obcaecati aliquam? Fugit porro illo maiores explicabo iure nobis possimus aliquid
+      temporibus error.
+      Nemo saepe explicabo incidunt voluptatem eius debitis dolorem adipisci non placeat, quas hic numquam repellendus
+      odio voluptates aliquid voluptate similique quisquam iusto doloremque inventore. Odio nulla asperiores
+      dignissimos deleniti atque!
+      Beatae maxime magni aspernatur eligendi consequatur aliquid quidem, laudantium architecto necessitatibus ipsa
+      itaque molestiae, veniam officia obcaecati doloremque cum fugiat porro nemo. Atque dignissimos voluptas
+      consectetur quidem voluptatem aliquid beatae?
+  </p>
+  <div class="sidebar2">
+      I AM SIDEBAR
+  </div>
+</div>
+<div class="slidebar3">
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sit et suscipit harum hic asperiores
+      tempore eius a cumque, quo amet cupiditate doloribus dolorem nam. Quis mollitia sequi qui perspiciatis!
+      Aliquam consequatur qui eos quisquam doloremque tenetur facere. Quidem voluptatum, veritatis molestias
+      exercitationem quod non eveniet blanditiis veniam porro saepe architecto iure eius nostrum dolore incidunt eum
+      labore, ea perspiciatis?
+      Adipisci consequatur libero aliquid atque delectus? Unde atque, quae blanditiis voluptatibus, odio dolorem amet
+      assumenda rerum id reiciendis quidem aspernatur exercitationem voluptates omnis? Odit accusantium exercitationem
+      beatae a sit hic!
+      Architecto eius, fugiat animi repellendus sit ducimus dignissimos debitis in deserunt nihil odit reprehenderit,
+      facere harum laborum incidunt omnis quod eveniet sint dolores dolorem error? Facilis neque ab rerum voluptates?
+      Qui inventore animi ducimus sapiente, impedit expedita, molestiae consectetur ipsa laudantium dolore nemo, porro
+      tenetur! Voluptatum deleniti corrupti nobis nesciunt animi quo porro rerum laboriosam suscipit sapiente, commodi
+      minima doloribus!
+  </p>
+</div>
+<div class="order">
+  <div class="dibba">First</div>
+  <div class="dibba star">Second</div>
+  <div class="dibba">Third</div>
+  <div class="dibba">Fourth</div>
+</div>
+<div>
+  <header class="navv">
+    <nav class="left">
+        <a href="#" class="navlink">Home</a>
+        <a href="#" class="navlink">About</a>
+        <a href="#" class="navlink">Contact</a>
+    </nav>
+    <nav class="right">
+        <a href="#" class="navlink">Sign Up</a>
+        <a href="#" class="navlink">Log In</a>
+    </nav>
+</header>
+</div>
+<div class="beauty">
+<div class="cards">
+  <h2>card heading</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sit et suscipit harum hic asperiores
+      tempore eius a cumque, quo amet cupiditate doloribus dolorem nam. Quis mollitia sequi qui perspiciatis!
+      Aliquam consequatur qui eos quisquam doloremque tenetur facere. Quidem voluptatum, veritatis molestias
+      exercitationem quod non eveniet blanditiis veniam porro saepe architecto iure eius nostrum dolore incidunt eum
+      labore, ea perspiciatis?
+  </p>
+  <footer>card footer</footer>
+</div>
+<div class="cards">
+  <h2>card heading</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sit et suscipit harum hic asperiores
+      tempore eius a cumque, quo amet cupiditate doloribus dolorem nam. Quis mollitia sequi qui perspiciatis!
+      Aliquam consequatur qui eos quisquam doloremque tenetur facere. Quidem voluptatum, veritatis molestias
+      exercitationem quod non eveniet blanditiis veniam porro saepe architecto iure eius nostrum dolore incidunt eum
+      labore, ea perspiciatis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sit et suscipit harum hic asperiores
+      tempore eius a cumque, quo amet cupiditate doloribus dolorem nam. Quis mollitia sequi qui perspiciatis!
+      Aliquam consequatur
+  </p>
+  <footer>card footer</footer>
+</div>
+<div class="cards">
+  <h2>card heading</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sit et suscipit harum hic asperiores
+      tempore eius a cumque, quo amet cupiditate doloribus dolorem nam. Quis mollitia sequi qui perspiciatis!
+      Aliquam consequatur qui eos quisquam doloremque tenetur facere. Quidem voluptatum, veritatis molestias
+  </p>
+  <footer>card footer</footer>
+</div>
+</div>
+<div>
+  <nav class="navy">
+    <h1>My Website</h1>
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+<div class="response">
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+  <div class="boo"></div>
+</div>
+<div class="grid">
+  <div class="gridbox" style="background-color: #E53935">FIRST</div>
+  <div class="gridbox" style="background-color: #D81B60">SECOND</div>
+  <div class="gridbox" style="background-color: #8E24AA">THIRD</div>
+  <div class="gridbox" style="background-color: #5E35B1">FOURTH</div>
+  <div class="gridbox" style="background-color: #3949AB">FIFTH</div>
+  <div class="gridbox" style="background-color: #1E88E5">SIXTH</div>
+  <div class="gridbox" style="background-color: #00ACC1">SEVENTH</div>
+  <div class="gridbox" style="background-color: #00897B">EIGHTH</div>
+</div>
+<div class="grid2">
+  <div class="grid2box" style="background-color: #E53935">FIRST</div>
+  <div class="grid2box" style="background-color: #D81B60">SECOND</div>
+  <div class="grid2box" style="background-color: #8E24AA">THIRD</div>
+  <div class="grid2box" style="background-color: #5E35B1">FOURTH</div>
+  <div class="grid2box" style="background-color: #3949AB">FIFTH</div>
+  <div class="grid2box" style="background-color: #1E88E5">SIXTH</div>
+  <div class="grid2box" style="background-color: #00ACC1">SEVENTH</div>
+  <div class="grid2box" style="background-color: #00897B">EIGHTH</div>
+</div>
+<div class="animation">
+  anime me
+</div>
+<div class="spin">
+<div class="spinner"></div>
+</div>
+<div class="ball">
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</div>
+<div class="//">
+  <div class="before">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quos in ducimus debitis magnam. Facilis
+    omnis sunt ullam doloribus ipsam maiores illo, similique, provident eos fuga voluptates, aliquam reprehenderit
+    alias?
+</div>
+</div>
+<div class="trilu">
+  <a href="#" class="b">Hover Me</a>
+
+</div>
+
+<div class="rainbow"></div>
+<div class="check">
+  <input type="checkbox" class="toggle" id="toggle" name="agree" />
+  <label for="toggle">Toggle Label</label>
+</div>
+</body>
+
+</html>
